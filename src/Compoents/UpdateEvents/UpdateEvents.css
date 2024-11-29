@@ -1,0 +1,78 @@
+.background {
+    background-image: url('../../img/purplebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensures the background covers the entire screen */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .header-create {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+  }
+  
+  .input {
+    width: 80%; /* Adjusts the width of the input fields */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.1); 
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: white;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #9d38b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%; /* Matches the input width */
+    margin-left: auto;
+    margin-right: auto; /* Centers the button */
+  }
+  
+  .button:hover {
+    background-color: #9a4dab;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust the form width as needed */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+  }
+
+  .input::placeholder {
+    color: white; /* Changes placeholder text color to white */
+    
+  }
+  

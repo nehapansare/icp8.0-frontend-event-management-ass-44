@@ -1,0 +1,78 @@
+.background {
+  background-image: url('../../img/purplebackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 1000vh; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.header-home {
+  margin-top: 20px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px gray;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.card-container {
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+.card-container:hover{
+  transform: scale(1.07); /* Grows slightly on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+
+}
+
+.card-icon {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.card-container-h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card-container-p {
+  font-size: 0.9rem;
+}
+.button-row {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px; /* Adds space between buttons */
+  margin-top: 50px; /* Adds space from the content above */
+}
+
+.home-btn {
+  background: linear-gradient(180deg, rgba(128, 0, 128, 1) 0%, rgba(255, 0, 128, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  cursor: pointer;
+  width: 200px; /* Set a fixed width for buttons */
+}
+
+.home-btn:hover {
+  transform: scale(1.09); /* Grows slightly on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
