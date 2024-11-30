@@ -8,19 +8,18 @@ function ViewEvents() {
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
 
-  // Fetch events on component mount
+ 
   useEffect(() => {
     const loadEvents = async () => {
-      const response = await axios.get("http://localhost:5001/events");
-      setEvents(response.data.data); // Assuming response.data.data holds the events
+      const response = await axios.get("https://event-management-backend-nm9s.onrender.com/events");
+      setEvents(response.data.data); 
     };
 
     loadEvents();
   }, []);
 
-  // Handle delete event
   const deleteEvent = async (id) => {
-    await axios.delete(`http://localhost:5001/events/${id}`);
+    await axios.delete(`https://event-management-backend-nm9s.onrender.com/events/${id}`);
     window.location.reload();
   };
 
@@ -43,14 +42,14 @@ function ViewEvents() {
             <p><strong>Date:</strong> {event.date}</p>
 
             <button onClick={(e) => {
-              e.stopPropagation(); // Prevents the event from propagating and navigating
+              e.stopPropagation(); 
               deleteEvent(event.id);
             }} className="btn-delete">
               Delete Event
             </button>
 
             <button onClick={(e) => {
-              e.stopPropagation(); // Prevents the event from propagating
+              e.stopPropagation(); 
               navigate(`/update_events/${event.id}`);
             }} className="btn-edit">
               Edit Event

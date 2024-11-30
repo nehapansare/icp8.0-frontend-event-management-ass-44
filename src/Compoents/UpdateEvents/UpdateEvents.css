@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh; /* Ensures the background covers the entire screen */
+    min-height: 100vh; 
     color: white;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
   }
   
   .input {
-    width: 80%; /* Adjusts the width of the input fields */
+    width: 80%; 
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -50,9 +50,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 80%; /* Matches the input width */
+    width: 80%; 
     margin-left: auto;
-    margin-right: auto; /* Centers the button */
+    margin-right: auto;
   }
   
   .button:hover {
@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%; /* Adjust the form width as needed */
+    width: 50%; 
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto; 
@@ -72,7 +72,7 @@
   }
 
   .input::placeholder {
-    color: white; /* Changes placeholder text color to white */
+    color: white; 
     
   }
   

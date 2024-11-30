@@ -6,10 +6,10 @@ import axios from 'axios';
 
 function DetailEvents() {
 
-  const { id } = useParams(); // Get ID from the URL
-  const [event, setEvent] = useState({}); // State for event data
+  const { id } = useParams(); 
+  const [event, setEvent] = useState({}); 
   const loadStudentDetail =async(roll)=>{
-    const response =await axios.get(`http://localhost:5001/events/${id}`)
+    const response =await axios.get(`https://event-management-backend-nm9s.onrender.com/events/${id}`)
     setEvent(response.data.data)
 }
 

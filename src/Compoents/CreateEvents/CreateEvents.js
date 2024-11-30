@@ -14,7 +14,7 @@ function CreateEvents() {
 
   const createEvent = async () => {
     try {
-      const response = await axios.post("http://localhost:5001/events", {
+      const response = await axios.post("https://event-management-backend-nm9s.onrender.com/events", {
         id: id,
         title: title,
         location: location,
@@ -48,7 +48,7 @@ function CreateEvents() {
       </div>
 
       <div className='form'>
-        {/* Form Inputs */}
+      
         <input 
           type="text" 
           placeholder="Event Id" 
