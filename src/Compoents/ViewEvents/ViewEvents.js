@@ -26,7 +26,7 @@ function ViewEvents() {
   return (
     <div className="background">
       <div className="row">
-        <Link to="/Home">
+        <Link to="/">
           <button className="back-to-home-btn">
             <b>Back To Home</b> <i className="fa-solid fa-house"></i>
           </button>
