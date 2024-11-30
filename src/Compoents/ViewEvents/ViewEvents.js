@@ -11,7 +11,7 @@ function ViewEvents() {
  
   useEffect(() => {
     const loadEvents = async () => {
-      const response = await axios.get("https://event-management-backend-nm9s.onrender.com/events");
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/events`);
       setEvents(response.data.data); 
     };
 
@@ -19,7 +19,7 @@ function ViewEvents() {
   }, []);
 
   const deleteEvent = async (id) => {
-    await axios.delete(`https://event-management-backend-nm9s.onrender.com/events/${id}`);
+    await axios.delete(`${process.env.REACT_APP_API_URL}/events/${id}`);
     window.location.reload();
   };
 

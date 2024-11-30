@@ -14,7 +14,7 @@ function CreateEvents() {
 
   const createEvent = async () => {
     try {
-      const response = await axios.post("https://event-management-backend-nm9s.onrender.com/events", {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/events`, {
         id: id,
         title: title,
         location: location,

@@ -9,7 +9,7 @@ function DetailEvents() {
   const { id } = useParams(); 
   const [event, setEvent] = useState({}); 
   const loadStudentDetail =async(roll)=>{
-    const response =await axios.get(`https://event-management-backend-nm9s.onrender.com/events/${id}`)
+    const response =await axios.get(`${process.env.REACT_APP_API_URL}/events/${id}`)
     setEvent(response.data.data)
 }
 

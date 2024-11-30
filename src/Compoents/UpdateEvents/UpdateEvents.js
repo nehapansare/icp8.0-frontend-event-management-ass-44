@@ -16,7 +16,7 @@ function UpdateEvents() {
   useEffect(() => {
     const loadEventDetail = async () => {
       try {
-        const response = await axios.get(`https://event-management-backend-nm9s.onrender.com/events/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/events/${id}`);
         const eventData = response.data.data;
         setTitle(eventData.title);
         setLocation(eventData.location);
@@ -33,7 +33,7 @@ function UpdateEvents() {
 
   const updateEvent = async () => {
     try {
-      const response = await axios.put(`https://event-management-backend-nm9s.onrender.com/events/${id}`, { 
+      const response = await axios.put(`${process.env.REACT_APP_API_URL}/events/${id}`, { 
         title,
         location,
         description,
